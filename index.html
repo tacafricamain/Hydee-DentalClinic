@@ -210,7 +210,7 @@
                                     <div class="spacer-single sm-hide"></div>
                                     <div class="col-lg-12">
                                        <div class=" rounded-1 overflow-hidden wow zoomIn" data-wow-delay=".3s">
-                                            <img src="images/misc/" class="w-100 wow scaleIn" alt="" data-wow-delay=".3s">
+                                            <img src="images/misc/image 1.webp" class="w-100 wow scaleIn" alt="" data-wow-delay=".3s">
                                         </div>
                                     </div>
                                 </div>
@@ -561,6 +561,101 @@
                         </div>
                     </div>
                 </div>
+                <!-- Maps Floating Button (Pill + Circular) -->
+<a id="maps-pill"
+   class="maps maps-pill"
+   href="https://www.google.com/maps/place/Hydee+Dental+Clinic/@6.6026147,3.2524527,17z/data=!3m1!4b1!4m6!3m5!1s0x103b9b4689d3e1cd:0xad57484090bbf798!8m2!3d6.6026147!4d3.2524527!16s%2Fg%2F11vtbqzcf7?entry=ttu"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Leave a review for Hydee Dental Clinic">
+  <span class="maps-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 6 11 6 11s6-5.8 6-11c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+    </svg>
+  </span>
+  <span class="maps-text">Leave a review</span>
+</a>
+
+<!-- Circular compact button (shown on small screens) -->
+<a id="maps-circle"
+   class="maps maps-circle"
+   href="https://www.google.com/maps/place/Hydee+Dental+Clinic/@6.6026147,3.2524527,17z/data=!3m1!4b1!4m6!3m5!1s0x103b9b4689d3e1cd:0xad57484090bbf798!8m2!3d6.6026147!4d3.2524527!16s%2Fg%2F11vtbqzcf7?entry=ttu"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Leave a review for Hydee Dental Clinic">
+  <span class="maps-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 6 11 6 11s6-5.8 6-11c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+    </svg>
+  </span>
+</a>
+
+<style>
+/* container positioning */
+.maps {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 9999;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  background: #28C76F;
+  cursor: pointer;
+  user-select: none;
+  transition: background .2s ease, transform .2s ease;
+}
+
+/* Pill style (default desktop) */
+.maps-pill {
+  padding: 12px 18px;
+  border-radius: 46px;
+}
+
+.maps-pill .maps-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+}
+
+.maps-pill .maps-text {
+  font-weight: 600;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+/* Circular compact style (hidden on large screens) */
+.maps-circle {
+  display: none;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* hover / active */
+.maps:hover {
+  background: #20b862;
+  transform: translateY(-2px);
+}
+
+.maps:active {
+  background: #1a9d53;
+  transform: translateY(1px);
+}
+
+/* Responsive: swap to circular on small screens */
+@media (max-width: 640px) {
+  .maps-pill { display: none; }
+  .maps-circle { display: inline-flex; }
+  .maps { right: 12px; bottom: 12px; }
+}
+</style>
+
                 <div class="container-fluid">
                     <div class="row">
                         <div class="owl-carousel owl-theme wow fadeInUp four-cols-center-dots text-center">
@@ -657,143 +752,6 @@
                     </div>
                 </div>
             </section>                      
-<!-- 3D Maps Floating Button (Pill + Circular) -->
-<!-- Replace or keep both; the pill is visible by default, circular appears on small screens -->
-<a id="maps-3d-pill"
-   class="maps-3d maps-pill"
-   href="https://www.google.com/maps/place/Hydee+Dental+Clinic/@6.6026147,3.2524527,17z/data=!3m1!4b1!4m6!3m5!1s0x103b9b4689d3e1cd:0xad57484090bbf798!8m2!3d6.6026147!4d3.2524527!16s%2Fg%2F11vtbqzcf7?entry=ttu&g_ep=EgoyMDI1MDkyMy4wIKXMDSoASAFQAw%3D%3D"
-   target="_blank" rel="noopener noreferrer"
-   aria-label="Open Hydee Dental Clinic on Google Maps">
-  <span class="maps-icon" aria-hidden="true">
-    <!-- simple map-pin SVG -->
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 6 11 6 11s6-5.8 6-11c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
-    </svg>
-  </span>
-  <span class="maps-text">Find us — Hydee Dental Clinic</span>
-</a>
-
-<!-- Circular compact button (shown on small screens) -->
-<a id="maps-3d-circle"
-   class="maps-3d maps-circle"
-   href="https://www.google.com/maps/place/Hydee+Dental+Clinic/@6.6026147,3.2524527,17z/data=!3m1!4b1!4m6!3m5!1s0x103b9b4689d3e1cd:0xad57484090bbf798!8m2!3d6.6026147!4d3.2524527!16s%2Fg%2F11vtbqzcf7?entry=ttu&g_ep=EgoyMDI1MDkyMy4wIKXMDSoASAFQAw%3D%3D"
-   target="_blank" rel="noopener noreferrer"
-   aria-label="Open Hydee Dental Clinic on Google Maps">
-  <span class="maps-icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 6 11 6 11s6-5.8 6-11c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
-    </svg>
-  </span>
-</a>
-
-<style>
-/* container positioning */
-.maps-3d {
-  position: fixed;
-  right: 22px;
-  bottom: 22px;
-  z-index: 9999;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-  transform-style: preserve-3d;
-  -webkit-tap-highlight-color: transparent;
-  will-change: transform;
-  transition: transform .18s cubic-bezier(.2,.9,.3,1), box-shadow .18s;
-  cursor: pointer;
-  user-select: none;
-  outline: none;
-}
-
-/* Pill style (default desktop) */
-.maps-pill {
-  padding: 12px 18px;
-  border-radius: 46px;
-  background: linear-gradient(145deg, #28C76F, #17a34a);
-  box-shadow:
-    0 8px 0 rgba(17,97,46,1), /* solid edge for 3D thickness */
-    0 20px 40px rgba(0,0,0,0.25);
-}
-
-.maps-pill .maps-icon {
-  width: 44px;
-  height: 44px;
-  display: inline-grid;
-  place-items: center;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.12);
-  box-shadow: inset 2px 2px 6px rgba(0,0,0,0.14), inset -2px -2px 6px rgba(255,255,255,0.06);
-  transform: translateZ(8px);
-}
-
-.maps-pill .maps-text {
-  font-weight: 700;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-  font-size: 15px;
-  letter-spacing: .1px;
-  transform: translateZ(6px);
-  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
-}
-
-/* Circular compact style (hidden on large screens) */
-.maps-circle {
-  display: none;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  background: linear-gradient(145deg, #28C76F, #17a34a);
-  box-shadow:
-    0 8px 0 rgba(17,97,46,1),
-    0 18px 36px rgba(0,0,0,0.28);
-  justify-content: center;
-  align-items: center;
-}
-
-/* hover / active */
-.maps-3d:hover {
-  transform: translateY(-6px) rotateX(3deg);
-  box-shadow:
-    0 14px 0 rgba(17,97,46,0.95),
-    0 28px 48px rgba(0,0,0,0.32);
-}
-
-.maps-3d:active {
-  transform: translateY(2px);
-  box-shadow: 0 6px 0 rgba(17,97,46,1), 0 12px 24px rgba(0,0,0,0.18);
-}
-
-/* focus (keyboard) */
-.maps-3d:focus {
-  box-shadow:
-    0 8px 0 rgba(17,97,46,1),
-    0 20px 40px rgba(0,0,0,0.25),
-    0 0 0 4px rgba(39,174,96,0.18);
-  outline: none;
-}
-
-/* Responsive: swap to circular on small screens */
-@media (max-width: 640px) {
-  .maps-pill { display: none; }
-  .maps-circle { display: inline-flex; }
-  /* move slightly inward on tiny screens */
-  .maps-3d { right: 12px; bottom: 12px; }
-}
-</style>
-
-<!-- Optional: small accessible keyboard handler (Enter / Space opens link) -->
-<script>
-document.querySelectorAll('.maps-3d').forEach(el => {
-  el.setAttribute('role', 'link');
-  el.addEventListener('keydown', e => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      window.open(el.href, '_blank', 'noopener');
-    }
-  });
-});
-</script>
 
             <section class="bg-color text-light pt-40 pb-40">
                 <div class="container">
